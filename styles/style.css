@@ -21,20 +21,32 @@ Gray COlor:
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
+
 body {
   font-family: 'Inter', sans-serif;
   color:#343a40 ;
   border-bottom: 8px solid #CB997E;
 }
 
-.hero-img {
-background-image: url(/images/hero.png);
-background-position: center center;
-background-repeat: no-repeat;
-width: 100vw;
-height: 100vh;
+
+/* ------------------------ */
+/* HEADER STYLES */
+/* ------------------------ */
+
+.header {
+  background-color: blue;
+  width: 100vw;
+  height: 350px;
 }
 
+.hero-img {
+background-image: url(/images/hero.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+width: 100vw;
+height: 100%;
+}
 
 footer {
   margin-bottom: 48px;
@@ -44,4 +56,11 @@ footer {
 
 .copyright {
   padding-bottom: 20px;
+}
+
+@media (min-width:580px) {
+  .hero-img{
+    width: 100vw;
+    height: 100vh;
+  }
 }
